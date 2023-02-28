@@ -16,5 +16,6 @@ async function fetchAPI(){
   const baseURL = `https://api.edamam.com/api/recipes/v2?type=public&q=pizza&app_id=a0701856&app_key=dd1f112182912aeaf4f5de60f8adac62
 &app_id=${APP_ID}&app_key=${APP_KEY}`;
   const response = await fetch(baseURL);
-  console.log(response);
+  const data = await response.json();
+  console.log(data);
 }
