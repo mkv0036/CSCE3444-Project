@@ -1,3 +1,7 @@
+document.getElementById("submit").addEventListener("click", function() {
+  window.location.href = 'home.html';
+});
+
 const searchForm = document.querySelector('form');
 const searchResultDiv = document.querySelector('.search-result');
 const container = document.querySelector('.container');
